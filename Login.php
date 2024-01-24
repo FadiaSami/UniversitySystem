@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testPHP</title>
+    <title>testPHP2</title>
 </head>
 <body>
     <?php
@@ -19,7 +19,7 @@
     $db_name = "mytestsitefadia-database";
 
     $conn= mysqli_connect($servername,$username,$password,$db_name) or die ("Connection failed");
-
+echo $conn;
 if (mysqli_connect_errno()) {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
 
