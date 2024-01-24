@@ -13,8 +13,8 @@
     $username = $password = "";
     $password_err=$username_err= $error_login = "";
 
-    $servername = "localhost";
-    $username = "root";
+    $servername = "mytestsitefadia-server";
+    $username = "";
     $password = "";
     $db_name = "mytestsitefadia-database";
 
