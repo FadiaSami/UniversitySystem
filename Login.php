@@ -19,7 +19,13 @@
     $db_name = "mytestsitefadia-database";
 
     $conn= mysqli_connect($servername,$username,$password,$db_name) or die ("Connection failed");
-    
+
+if (mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+
+}
+
+	
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         // Check if username is empty
         if(empty($_POST["username"])){
