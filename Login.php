@@ -14,7 +14,7 @@
     $password_err=$username_err= $error_login = "";
 
    $serverName = "mytestsitefadia-server.mysql.database.azure.com";
-$databaseName = "your_database_name";
+$databaseName = "mytestsitefadia-database";
 $username = "your_username@your_server_name";
 $password = "your_password";
 
