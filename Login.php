@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testPHP</title>
+    <title>testPHP333</title>
 </head>
 <body>
     <?php
@@ -13,19 +13,20 @@
     $username = $password = "";
     $password_err=$username_err= $error_login = "";
 
-    $servername = "mytestsitefadia-server";
-    $username = "";
-    $password = "";
-    $db_name = "mytestsitefadia-database";
-echo "ff1";
-    $conn= new mysqli($servername,$username,$password,$db_name) or die ("Connection failed");
-echo "ff2";
-echo $conn;
-if (mysqli_connect_errno()) {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+   $serverName = "your_server_name.mysql.database.azure.com";
+$databaseName = "your_database_name";
+$username = "your_username@your_server_name";
+$password = "your_password";
 
+try {
+    $conn = new PDO("mysql:host=$serverName;dbname=$databaseName", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connected successfully";
+
+    // Perform database operations here
+} catch (PDOException $e) {
+    die("Connection failed: " . $e->getMessage());
 }
-echo "ff3";
 	
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         // Check if username is empty
