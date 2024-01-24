@@ -16,7 +16,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $db_name = "tickitingsystem";
+    $db_name = "mytestsitefadia-database";
 
     $conn= mysqli_connect($servername,$username,$password,$db_name) or die ("Connection failed");
     
