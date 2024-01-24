@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testPHP2</title>
+    <title>testPHP</title>
 </head>
 <body>
     <?php
@@ -13,7 +13,7 @@
     $username = $password = "";
     $password_err=$username_err= $error_login = "";
 
-    $servername = "mytestsitefadia-server.mysql.database.azure.com";
+    $servername = "mytestsitefadia-server";
     $username = "ifdtuzzxgb";
     $password = "1Z11L26G8ZA74O6G$";
     $db_name = "mytestsitefadia-database";
