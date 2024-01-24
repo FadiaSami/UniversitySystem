@@ -18,7 +18,7 @@
     $password = "";
     $db_name = "mytestsitefadia-database";
 echo "ff1";
-    $conn= mysqli_connect($servername,$username,$password,$db_name) or die ("Connection failed");
+    $conn= new mysqli($servername,$username,$password,$db_name) or die ("Connection failed");
 echo "ff2";
 echo $conn;
 if (mysqli_connect_errno()) {
