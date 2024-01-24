@@ -14,8 +14,8 @@
     $password_err=$username_err= $error_login = "";
 
     $servername = "mytestsitefadia-server.mysql.database.azure.com";
-    $username = "";
-    $password = "";
+    $username = "ifdtuzzxgb";
+    $password = "1Z11L26G8ZA74O6G$";
     $db_name = "mytestsitefadia-database";
 
     $conn= mysqli_connect($servername,$username,$password,$db_name) or die ("Connection failed");
