@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testPHP</title>
+    <title>testPHP33</title>
 </head>
 <body>
     <?php
     session_start();
-    echo "ff";
+    
     $username = $password = "";
     $password_err=$username_err= $error_login = "";
 
@@ -17,14 +17,15 @@
     $username = "";
     $password = "";
     $db_name = "mytestsitefadia-database";
-
+echo "ff1";
     $conn= mysqli_connect($servername,$username,$password,$db_name) or die ("Connection failed");
+echo "ff2";
 echo $conn;
 if (mysqli_connect_errno()) {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
 
 }
-
+echo "ff3";
 	
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         // Check if username is empty
