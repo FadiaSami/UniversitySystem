@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testPHP100000</title>
+    <title>testPHP1</title>
 </head>
 <body>
     <?php
@@ -16,7 +16,7 @@
    $serverName = "mytestsitefadia-server.mysql.database.azure.com";
 $databaseName = "mytestsitefadia-database";
 $username = "f.alaeddin@ltuc.com@mytestsitefadia-server";
-$password = "MFM@#123456";
+$password = "MFM@#12345";
 
 try {
     $conn = new PDO("mysql:host=$serverName;dbname=$databaseName", $username, $password);
