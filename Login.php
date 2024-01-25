@@ -15,7 +15,7 @@
 
    $serverName = "mytestsitefadia-server.mysql.database.azure.com";
 $databaseName = "mytestsitefadia-database";
-$username = "f.alaeddin@ltuc.com@mytestsitefadia-server";
+$username = "ifdtuzzxgb";
 $password = "MFM@#12345";
 
 try {
