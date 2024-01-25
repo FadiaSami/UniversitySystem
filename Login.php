@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testPHP1</title>
+    <title>testPHP</title>
 </head>
 <body>
     <?php
@@ -19,8 +19,9 @@ $username = "ifdtuzzxgb";
 $password = "MFM@#12345";
 
 try {
-    $conn = new PDO("mysql:host=$serverName;dbname=$databaseName", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+   $con = mysqli_init();
+mysqli_ssl_set($con,NULL,NULL, "{path to CA cert}", NULL, NULL);
+mysqli_real_connect($conn, "mytestsitefadia-server.mysql.database.azure.com", "ifdtuzzxgb", "{MFM@#12345}", "{mytestsitefadia-database}", 3306, MYSQLI_CLIENT_SSL);
     echo "Connected successfully";
 
     // Perform database operations here
