@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+o <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,9 +19,10 @@ $username = "ifdtuzzxgb";
 $password = "MFM@#12345";
 
 try {
+	echo "ddd";
    $con = mysqli_init();
 mysqli_ssl_set($con,NULL,NULL, "{path to CA cert}", NULL, NULL);
-mysqli_real_connect($conn, "mytestsitefadia-server.mysql.database.azure.com", "ifdtuzzxgb", "{MFM@#12345}", "{mytestsitefadia-database}", 3306, MYSQLI_CLIENT_SSL);
+mysqli_real_connect($con, "mytestsitefadia-server.mysql.database.azure.com", "ifdtuzzxgb", "{MFM@#12345}", "{mytestsitefadia-database}", 3306, MYSQLI_CLIENT_SSL);
     echo "Connected successfully";
 
     // Perform database operations here
