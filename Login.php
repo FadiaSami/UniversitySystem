@@ -4,7 +4,7 @@ o <!DOCTYPE html>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testPHP66666</title>
+    <title>tesddddddddPHP66666</title>
 </head>
 <body>
     <?php
@@ -27,7 +27,7 @@ mysqli_real_connect($con, "mytestsitefadia-server.mysql.database.azure.com", "if
 
     // Perform database operations here
 } catch (PDOException $e) {
-    die("Connection failed: " . $e->getMessage());
+    die("Connection failed: " . $con->getMessage());
 }
 	
     if($_SERVER["REQUEST_METHOD"] == "POST"){
